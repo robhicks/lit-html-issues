@@ -18,6 +18,10 @@ Either I don't know how to use lit-html or it has some serious bugs for form pro
 
 # Running
 
+This repo does not require a build step but will only run in browsers that have native support
+for v1 web components. Chrome, Firefox and Safari all now support v1 native web components so
+feel free to run this in any of those browsers. Note, they all react the same. 
+
 1. download the repo.
 2. install the resources using npm install.
 3. start a live-server using ```npm start```
