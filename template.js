@@ -12,11 +12,11 @@ export default function template(c) {
 
       <div>select cannot be set/changed programatically</div>
       <select @change="${ev => {c.selected = ev.currentTarget.value; console.log('value set to', ev.currentTarget.value)}}">
-        <option value="" ?selected="${c.selcted === ''}">Select</option>
-        <option value="1" ?selected="${c.selcted === '1'}">1</option>
-        <option value="2" ?selected="${c.selcted === '2'}">2</option>
-        <option value="3" ?selected="${c.selcted === '3'}">3</option>
-        <option value="4" ?selected="${c.selcted === '4'}">4</option>
+        <option value="" ?selected="${c.selected === ''}">Select</option>
+        <option value="1" ?selected="${c.selected === '1'}">1</option>
+        <option value="2" ?selected="${c.selected === '2'}">2</option>
+        <option value="3" ?selected="${c.selected === '3'}">3</option>
+        <option value="4" ?selected="${c.selected === '4'}">4</option>
       </select>
       <div>checkbox cannot be updated programatically</div>
       <input
