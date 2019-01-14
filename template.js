@@ -10,7 +10,7 @@ export default function template(c) {
       <div>input cannot be updated programatically</div>
       <input type="text" value="${c.text}" @input="${changeText}"/>
 
-      <div>select cannot be set/changed programatically</div>
+      <div>select cannot be changed programatically</div>
       <select @change="${ev => {c.selected = ev.currentTarget.value; console.log('value set to', ev.currentTarget.value)}}">
         <option value="" ?selected="${c.selected === ''}">Select</option>
         <option value="1" ?selected="${c.selected === '1'}">1</option>
